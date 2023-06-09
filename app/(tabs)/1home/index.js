@@ -1,21 +1,19 @@
 import { Stack, useRouter } from "expo-router";
-import { Button, Text, View } from "react-native";
+import { Button, Image, Text, View } from "react-native";
+import Feed from "../../components/feed";
 import { AuthStore } from "../../../store";
 const Tab1Index = () => {
   const router = useRouter();
+
+ 
+
+
+
   return (
-    <View className="flex-1 items-center justify-center bg-red-200">
-      <Stack.Screen options={{ headerShown: true, title: "Home" }} />
-     <Text>Home</Text>
-      <Button
-        onPress={() => {
-          AuthStore.update((s) => {
-            s.isLoggedIn = false;
-          });
-          router.replace("/login");
-        }}
-        title="LOGOUT"
-      />
+    <View className="">
+      <Stack.Screen options={{ headerShown: true, title: "SnapShare" }} />
+  
+     <Feed/>
     </View>
   );
 };

@@ -1,5 +1,6 @@
 import { Stack, useRouter } from "expo-router";
 import { Button, View } from "react-native";
+import Feed from "../../../components/feed";
 import { AuthStore } from "../../../store";
 
 const Tab2Index = () => {
@@ -17,6 +18,8 @@ const Tab2Index = () => {
         }}
         title="LOGOUT"
       />
+
+ 
     </View>
   );
 };

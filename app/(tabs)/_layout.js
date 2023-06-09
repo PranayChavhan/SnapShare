@@ -9,6 +9,7 @@ const TabsLayout = () => {
         headerShown: false,
         tabBarStyle:{
           backgroundColor: "white",
+          
           marginHorizontal:20,
           marginBottom: 10,
           borderRadius: 15,
@@ -31,7 +32,7 @@ const TabsLayout = () => {
         name="2category"
         options={{
           title: "Category",
-          tabBarIcon: () => <Text>⚙️</Text>,
+          tabBarIcon: () => <Text>😎</Text>,
         }}
       />
 
