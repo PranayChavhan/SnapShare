@@ -4,9 +4,20 @@ import { Text } from "react-native";
 const TabsLayout = () => {
   return (
     <Tabs
+
       screenOptions={{
         headerShown: false,
+        tabBarStyle:{
+          backgroundColor: "white",
+          marginHorizontal:20,
+          marginBottom: 10,
+          borderRadius: 15,
+          paddingBottom: 5,
+          height: 55,
+        }
       }}
+
+
     >
       <Tabs.Screen
         name="1home"
